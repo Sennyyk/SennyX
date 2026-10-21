@@ -12,10 +12,24 @@ body {
     width: 800px;
     height: 350px;
 }
+.perfil {
+    border: 6px solid rgb(32, 26, 37);
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 20px;
+    height: 260px;
+}
 
 .presentacion h1 {
-    margin-left: 10px;
+    margin-left: 320px;
+    font-size: 80px;
     font-family: Arial, Helvetica, sans-serif;
+}
+.presentacion p1 {
+    position: absolute;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 340px;
 }
 
 .contenedor {
@@ -28,14 +42,25 @@ body {
 
 .Sobre-mi {
     box-sizing: border-box;
-    border:  4px solid rgb(54, 33, 33);
+    border:  4px solid rgb(41, 35, 35);
     background-color: rgb(56, 56, 104);
     width: 400px;
     height: 700px;
 }
 .Sobre-mi h1{
+    font-size: 50px;
     margin-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
+}
+.Sobre-mi p1 {
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Sobre-mi img {
+    margin-top: 320px;
+    margin-left: 18px;
+    height: 200px;
 }
 
 .descripcion {
@@ -62,4 +87,21 @@ body {
 .Lenguajes h1 {
     margin-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
+}
+.Lenguajes img {
+    margin-top: 300px;
+    margin-left: 80px;
+    height: 250px;
+}
+h1 {
+    color: rgb(37, 21, 28);
+}
+.contact {
+    margin-top: 10px;
+    margin-left: 545px;
+    box-sizing: border-box;
+    border:  4px solid rgb(41, 35, 35);
+    background-color: rgb(56, 56, 104);
+    width: 800px;
+    height: 200px;
 }
