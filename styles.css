@@ -1,5 +1,10 @@
 body {
     background-color: rgb(32, 26, 37);
+    background-image: url("Imagen/WallpaperLain.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .presentacion {
@@ -56,9 +61,14 @@ body {
     font-size: 20px;
     margin-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin: 0;
+    padding: 10px;
+    line-height: 1.6;
+    text-align: left;
 }
 .Sobre-mi img {
-    margin-top: 320px;
+    margin-top: 250px;
     margin-left: 18px;
     height: 200px;
 }
@@ -73,6 +83,15 @@ body {
 
 .descripcion h1 {
     margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.descripcion p1 {
+    display: block;
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: left;
     font-family: Arial, Helvetica, sans-serif;
 }
 
