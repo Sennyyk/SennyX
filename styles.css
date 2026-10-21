@@ -1,0 +1,11 @@
+.presentacion {
+    box-sizing: border-box;
+    border:  4px solid rgb(141, 83, 146);
+    background-color: rgb(130, 130, 163);
+    margin-top: 40px;
+    margin-left: 600px;
+    width: 800px;
+    height: 350px;
+    display: flex; 
+
+}
