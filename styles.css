@@ -7,28 +7,56 @@ body {
     background-attachment: fixed;
 }
 
+body::after {
+    content: "Imagen/WallpaperLain.jpeg";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -3;
+
+    background: repeating-linear-gradient(
+        to bottom,
+        transparent 0px,
+        transparent 1px,
+        rgba(0, 0, 0, 0.18) 6px,      /* efecto ctr */
+        transparent 5px
+    );
+                      
+    animation: crt-lines 0.25s linear infinite;
+}
+
+@keyframes crt-lines {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 5px;
+    }
+}
+
 .presentacion {
     box-sizing: border-box;
-    border:  4px solid rgb(54, 33, 33);
-    background-color: rgb(56, 56, 104);
+    border:  4px solid rgb(80, 60, 75);
+    background-color: rgb(117, 101, 117);
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
-    width: 800px;
-    height: 350px;
+    width: 650px;
+    height: 330px;
 }
 .perfil {
-    border: 6px solid rgb(32, 26, 37);
+    border: 6px solid rgb(80, 60, 75);
     position: absolute;
     margin-top: 35px;
     margin-left: 20px;
-    height: 260px;
+    height: 235px;
+    width: 235px;
 }
 
 .presentacion h1 {
-    margin-left: 320px;
+    margin-left: 300px;
     font-size: 80px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Silkscreen", monospace;
 }
 .presentacion p1 {
     position: absolute;
@@ -42,23 +70,23 @@ body {
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
-    margin-top: 40px;
+    margin-top: 23px;
 }
 
 .Sobre-mi {
     box-sizing: border-box;
-    border:  4px solid rgb(41, 35, 35);
-    background-color: rgb(56, 56, 104);
-    width: 400px;
+    border:  4px solid rgb(80, 60, 75);
+    background-color: rgb(117, 101, 117);
+    width: 300px;
     height: 700px;
 }
 .Sobre-mi h1{
-    font-size: 50px;
+    font-size: 40px;
     margin-left: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Silkscreen", monospace;
 }
 .Sobre-mi p1 {
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
     display: block;
@@ -68,59 +96,99 @@ body {
     text-align: left;
 }
 .Sobre-mi img {
-    margin-top: 250px;
-    margin-left: 18px;
-    height: 200px;
+    margin-top: 280px;
+    margin-left: 9px;
+    height: 155px;
 }
 
 .descripcion {
     box-sizing: border-box;
-    border:  4px solid rgb(54, 33, 33);
-    background-color: rgb(56, 56, 104);
-    width: 800px;
+    border:  4px solid rgb(80, 60, 75);
+    background-color: rgb(117, 101, 117);
+    width: 650px;
     height: 900px;
 }
 
 .descripcion h1 {
     margin-left: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-family: "Silkscreen", monospace;
 }
 .descripcion p1 {
     display: block;
     margin: 0;
     padding: 10px;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1.6;
     text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Press Start 2P', monospace
 }
 
 .Lenguajes {
     box-sizing: border-box;
-    border:  4px solid rgb(54, 33, 33);
-    background-color: rgb(56, 56, 104);
-    width: 400px;
+    border:  4px solid rgb(80, 60, 75);
+    background-color: rgb(117, 101, 117);
+    width: 300px;
     height: 700px;
 }
 
 .Lenguajes h1 {
+    font-size: 40px;
     margin-left: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Silkscreen", monospace;
 }
 .Lenguajes img {
     margin-top: 300px;
     margin-left: 80px;
-    height: 250px;
+    height: 180px;
 }
 h1 {
     color: rgb(37, 21, 28);
 }
 .contact {
     margin-top: 10px;
-    margin-left: 545px;
+    margin-left: 620px;
     box-sizing: border-box;
-    border:  4px solid rgb(41, 35, 35);
-    background-color: rgb(56, 56, 104);
-    width: 800px;
+    border:  4px solid rgb(80, 60, 75);
+    background-color: rgb(117, 101, 117);
+    width: 650px;
     height: 200px;
+}
+
+.social-links {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    z-index: 1000;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 70px;
+    height: 70px;
+
+    border: 5px solid rgba(38, 32, 43, 0.8);
+    border-radius: 50px;
+
+    transition: transform 0.2s ease,
+                background-color 0.2s ease;
+}
+
+.social-links img {
+    width: 51px;
+    height: 51px;
+    display: block;
+}
+
+.social-links a:hover {
+    transform: translateY(-4px);
+    background-color: #36333f;
 }
