@@ -162,7 +162,6 @@ body::after {
 }
 
 .logos img {
-    height: 100px;
     width: auto;
     object-fit: contain;
 }
@@ -182,6 +181,14 @@ body::after {
         transparent 16px
     );
     
+}
+.Lenguajes h2 {
+    color: rgb(37, 21, 28);
+    font-size: 32px;
+    margin-left: 10px;
+    font-family: "Silkscreen", monospace;
+    text-decoration: underline;
+
 }
 h1 {
     color: rgb(37, 21, 28);
