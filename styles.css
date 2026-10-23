@@ -55,15 +55,24 @@ body::after {
 
 .presentacion h1 {
     text-decoration: underline;
-    margin-left: 300px;
+    margin-left: 290px;
+    margin-bottom: 0;
     font-size: 80px;
     font-family: "Silkscreen", monospace;
 }
+
 .presentacion p1 {
-    position: absolute;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 340px;
+}
+.presentacion li {
+    margin-top: 0;
+    margin-bottom: 1px;
+    color: rgb(37, 21, 28);
+    margin-left: 310px;
+    font-size: 25px;
+    font-family: "Silkscreen", monospace;
 }
 
 .contenedor {
@@ -98,11 +107,9 @@ body::after {
     text-align: left;
 }
 .Sobre-mi img {
-    margin-top: 280px;
-    margin-left: 9px;
+    margin-top: 60px;
     height: 155px;
 }
-
 .descripcion {
     box-sizing: border-box;
     border:  4px solid rgb(80, 60, 75);
@@ -127,6 +134,20 @@ body::after {
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
 }
+.crona {
+    width: 300px;
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 15px;
+}
+.descripcion p2 {
+    display: block;
+    color: #1c0822;
+    margin-left: 325px;
+    padding: 7px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .descripcion hr {
     border: none;
     height: 4px;
@@ -138,6 +159,32 @@ body::after {
         transparent 16px
     );
 }
+.lainX {
+    margin-left:50px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+.fute {
+    display: flex;
+}
+
+.fute p3 {
+    margin-right: 80px;
+    margin-left: 20px;
+    flex: 1;    
+    color: #1c0822;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.miku {
+    margin-top: 13px;
+    margin-right: 40px;
+    width: 200px;
+    height: 200px;
+}
+
 
 .Lenguajes {
     box-sizing: border-box;
@@ -195,7 +242,7 @@ h1 {
 }
 .contact {
     margin-top: 10px; 
-    margin-left: 589px;
+    margin-left: 620px;
     box-sizing: border-box;
     border:  4px solid rgb(80, 60, 75);
     background-color: rgb(117, 101, 117);
@@ -207,6 +254,15 @@ h1 {
     margin-left: 10px;
     font-family: "Silkscreen", monospace;
     text-decoration: underline; 
+}
+.contact p1 {
+    display: block;
+    margin-left: 10px;
+    flex: 1;    
+    color: #1c0822;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .social-links {
@@ -245,4 +301,22 @@ h1 {
 .social-links a:hover {
     transform: translateY(-4px);
     background-color: #272627;
+}
+@media (max-width: 700px) {
+    .presentacion,
+    .descripcion,
+    .bases-datos {
+        width: 95%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .bases-datos {
+        gap: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
